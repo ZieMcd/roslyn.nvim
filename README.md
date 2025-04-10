@@ -98,7 +98,7 @@ The plugin comes with the following defaults:
         vim.fs.joinpath(vim.fn.stdpath("data"), "roslyn", "Microsoft.CodeAnalysis.LanguageServer.dll"),
     },
     args = {
-        "--logLevel=Information", "--extensionLogDirectory=" .. vim.fs.dirname(vim.lsp.get_log_path())
+        "--logLevel=Information", "--extensionLogDirectory=" .. vim.fs.dirname(vim.lsp.get_log_path()),  "--stdio=true"
     },
   --[[
   -- args can be used to pass additional flags to the language server
